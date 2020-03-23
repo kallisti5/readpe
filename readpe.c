@@ -154,6 +154,11 @@ main(int argc, char* argv[])
 		printf("PE optional header: (present)\n");
 		printf("  magic: %X\n", peOpt->magic);
 		// ...
+		printf("  baseOfCode: %X\n", peOpt->baseOfCode);
+		printf("  baseOfData: %X\n", peOpt->baseOfData);
+		printf("  imageBase: %X\n", peOpt->imageBase);
+		printf("  sectionAlignment: %X\n", peOpt->sectionAlignment);
+		printf("  fileAlignment: %X\n", peOpt->fileAlignment);
 		printf("  majorOperatingSystemVersion: %X\n",
 			peOpt->majorOperatingSystemVersion);
 		printf("  minorOperatingSystemVersion: %X\n",
