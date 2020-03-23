@@ -154,6 +154,7 @@ main(int argc, char* argv[])
 		printf("PE optional header: (present)\n");
 		printf("  magic: %X\n", peOpt->magic);
 		// ...
+		printf("  addressOfEntryPoint: %X\n", peOpt->addressOfEntryPoint);
 		printf("  baseOfCode: %X\n", peOpt->baseOfCode);
 		printf("  baseOfData: %X\n", peOpt->baseOfData);
 		printf("  imageBase: %X\n", peOpt->imageBase);
